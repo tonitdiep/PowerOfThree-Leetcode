@@ -10,6 +10,11 @@
 // Input: n = 27
 // Output: true
 var isPowerOfThree = function(n) {
-
-
+  // iterative option
+    if ((n === 1)) 
+        {return true;}
+    else if (n < 1)
+        {return false;}
+    else
+        return isPowerOfThree(n/3)
 }
